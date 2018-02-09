@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Cors;
 
 namespace dotcoretest
 {
@@ -25,8 +26,9 @@ namespace dotcoretest
         {
             services.AddMvc();
 
-            //配置Cors
-            app.UseCors("CorsSample");
+            //添加cors 服务
+            services.AddCors(options => options.AddPolicy("CorsSample",p => p.WithOrigins("http://localhost:5000").AllowAnyMethod().AllowAnyHeader()));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,8 +39,8 @@ namespace dotcoretest
                 app.UseDeveloperExceptionPage();
             }
 
-            //添加cors 服务
-            services.AddCors(options => options.AddPolicy("CorsSample",p => p.WithOrigins("http://localhost:5000").AllowAnyMethod().AllowAnyHeader()));
+            //配置Cors
+            app.UseCors("CorsSample");
 
             app.UseMvc();
         }
