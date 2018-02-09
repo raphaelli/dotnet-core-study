@@ -24,6 +24,9 @@ namespace dotcoretest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            //配置Cors
+            app.UseCors("CorsSample");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
