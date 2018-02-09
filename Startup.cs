@@ -34,6 +34,9 @@ namespace dotcoretest
                 app.UseDeveloperExceptionPage();
             }
 
+            //添加cors 服务
+            services.AddCors(options => options.AddPolicy("CorsSample",p => p.WithOrigins("http://localhost:5000").AllowAnyMethod().AllowAnyHeader()));
+
             app.UseMvc();
         }
     }
