@@ -1,0 +1,3 @@
+C:\Users\rapha\Documents\code\dotcoretest\obj\Debug\netcoreapp2.0\dotcoretest.csproj.CoreCompileInputs.cache
+C:\Users\rapha\Documents\code\dotcoretest\obj\Debug\netcoreapp2.0\dotcoretest.AssemblyInfoInputs.cache
+C:\Users\rapha\Documents\code\dotcoretest\obj\Debug\netcoreapp2.0\dotcoretest.AssemblyInfo.cs
