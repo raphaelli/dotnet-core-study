@@ -11,9 +11,10 @@ namespace dotcoretest.Controllers
     {
         // GET api/values
         [HttpGet]
+        [EnableCors("CorsSample")]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { DateTime.Now.ToString() };
         }
 
         // GET api/values/5
