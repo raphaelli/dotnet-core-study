@@ -25,10 +25,6 @@ namespace dotcoretest
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
-            //添加cors 服务
-            services.AddCors(options => options.AddPolicy("CorsSample",p => p.WithOrigins("http://localhost:5000").AllowAnyMethod().AllowAnyHeader()));
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,10 +34,6 @@ namespace dotcoretest
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            //配置Cors
-            app.UseCors("CorsSample");
-
             app.UseMvc();
         }
     }
