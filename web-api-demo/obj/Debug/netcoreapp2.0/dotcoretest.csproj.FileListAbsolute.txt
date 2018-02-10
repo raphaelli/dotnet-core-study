@@ -8,3 +8,13 @@ C:\Users\rapha\Documents\code\dotcoretest\bin\Debug\netcoreapp2.0\dotcoretest.dl
 C:\Users\rapha\Documents\code\dotcoretest\bin\Debug\netcoreapp2.0\dotcoretest.pdb
 C:\Users\rapha\Documents\code\dotcoretest\obj\Debug\netcoreapp2.0\dotcoretest.dll
 C:\Users\rapha\Documents\code\dotcoretest\obj\Debug\netcoreapp2.0\dotcoretest.pdb
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\bin\Debug\netcoreapp2.0\dotcoretest.deps.json
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\bin\Debug\netcoreapp2.0\dotcoretest.runtimeconfig.json
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\bin\Debug\netcoreapp2.0\dotcoretest.runtimeconfig.dev.json
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\bin\Debug\netcoreapp2.0\dotcoretest.dll
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\bin\Debug\netcoreapp2.0\dotcoretest.pdb
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\obj\Debug\netcoreapp2.0\dotcoretest.csproj.CoreCompileInputs.cache
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\obj\Debug\netcoreapp2.0\dotcoretest.AssemblyInfoInputs.cache
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\obj\Debug\netcoreapp2.0\dotcoretest.AssemblyInfo.cs
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\obj\Debug\netcoreapp2.0\dotcoretest.dll
+C:\Users\rapha\Documents\code\dotnet-core-study\web-api-demo\obj\Debug\netcoreapp2.0\dotcoretest.pdb

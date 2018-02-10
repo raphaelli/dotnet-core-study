@@ -12543,11 +12543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\web-api-demo\\dotcoretest.csproj",
+      "projectUniqueName": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\web-api-demo\\dotcoretest.csproj",
       "projectName": "dotcoretest",
-      "projectPath": "c:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\web-api-demo\\dotcoretest.csproj",
+      "projectPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\web-api-demo\\dotcoretest.csproj",
       "packagesPath": "C:\\Users\\rapha\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\web-api-demo\\obj\\",
+      "outputPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\web-api-demo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
