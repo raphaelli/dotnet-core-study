@@ -1,0 +1,10 @@
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\bin\Debug\netcoreapp2.0\Todo WebApi.deps.json
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\bin\Debug\netcoreapp2.0\Todo WebApi.runtimeconfig.json
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\bin\Debug\netcoreapp2.0\Todo WebApi.runtimeconfig.dev.json
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\bin\Debug\netcoreapp2.0\Todo WebApi.dll
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\bin\Debug\netcoreapp2.0\Todo WebApi.pdb
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\obj\Debug\netcoreapp2.0\Todo WebApi.csproj.CoreCompileInputs.cache
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\obj\Debug\netcoreapp2.0\Todo WebApi.AssemblyInfoInputs.cache
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\obj\Debug\netcoreapp2.0\Todo WebApi.AssemblyInfo.cs
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\obj\Debug\netcoreapp2.0\Todo WebApi.dll
+C:\Users\rapha\Documents\code\dotnet-core-study\Todo WebApi\obj\Debug\netcoreapp2.0\Todo WebApi.pdb
