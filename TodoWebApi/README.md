@@ -198,6 +198,7 @@ Name = "GetTodo" 创建具名路由。
 ## 实现其他的 CRUD 操作
 在以下部分中，将 Create、Update 和 Delete 方法添加到控制器。
 
+### 创建
 添加以下 Create 方法。
 ```cs
 [HttpPost]
@@ -236,3 +237,48 @@ public IActionResult GetById(long id)
 
 使用 postman 进行 post 测试
 ![post test](./img/postdemo.png)
+
+### 更新
+
+添加以下 Update 方法：
+```cs
+[HttpPost]
+public IActionResult Create([FromBody] TodoItem item)
+{
+    if (item == null)
+    {
+        return BadRequest();
+    }
+
+    _context.TodoItems.Add(item);
+    _context.SaveChanges();
+
+    return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
+}
+```
+
+通过ID 更新：
+```cs
+[HttpPut("{id}")]
+public IActionResult Update(long id, [FromBody] TodoItem item)
+{
+    if (item == null || item.Id != id)
+    {
+        return BadRequest();
+    }
+
+    var todo = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+    if (todo == null)
+    {
+        return NotFound();
+    }
+
+    todo.IsComplete = item.IsComplete;
+    todo.Name = item.Name;
+
+    _context.TodoItems.Update(todo);
+    _context.SaveChanges();
+    return new NoContentResult();
+}
+```
+Update 与 Create 类似，但是使用的是 HTTP PUT。 响应是 204（无内容）。 根据 HTTP 规范，PUT 请求需要客户端发送整个更新的实体，而不仅仅是增量。 若要支持部分更新，请使用 HTTP PATCH。
