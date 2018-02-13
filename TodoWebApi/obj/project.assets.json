@@ -12542,11 +12542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\Todo WebApi\\Todo WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\Todo WebApi.csproj",
       "projectName": "Todo WebApi",
-      "projectPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\Todo WebApi\\Todo WebApi.csproj",
+      "projectPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\Todo WebApi.csproj",
       "packagesPath": "C:\\Users\\rapha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\Todo WebApi\\obj\\",
+      "outputPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
