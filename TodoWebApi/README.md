@@ -282,3 +282,26 @@ public IActionResult Update(long id, [FromBody] TodoItem item)
 }
 ```
 Update 与 Create 类似，但是使用的是 HTTP PUT。 响应是 204（无内容）。 根据 HTTP 规范，PUT 请求需要客户端发送整个更新的实体，而不仅仅是增量。 若要支持部分更新，请使用 HTTP PATCH。
+
+
+### 删除
+```
+[HttpDelete("{id}")]
+public IActionResult Delete(long id)
+{
+    var todo = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+    if (todo == null)
+    {
+        return NotFound();
+    }
+
+    _context.TodoItems.Remove(todo);
+    _context.SaveChanges();
+    return new NoContentResult();
+}
+```
+
+Delete 响应是 204（无内容）。
+
+
+如上，一个简单的 TodoApi  就完成了，API 提供了数据交互的功能，让客户端与之联动，便能实现APP的基础功能。
