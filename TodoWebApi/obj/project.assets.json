@@ -12542,9 +12542,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\Todo WebApi.csproj",
-      "projectName": "Todo WebApi",
-      "projectPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\Todo WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\TodoWebApi.csproj",
+      "projectName": "TodoWebApi",
+      "projectPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\TodoWebApi.csproj",
       "packagesPath": "C:\\Users\\rapha\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rapha\\Documents\\code\\dotnet-core-study\\TodoWebApi\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,0 +1,10 @@
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.deps.json
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.runtimeconfig.json
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.runtimeconfig.dev.json
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.dll
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.pdb
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.csproj.CoreCompileInputs.cache
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.AssemblyInfoInputs.cache
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.AssemblyInfo.cs
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.dll
+C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.pdb

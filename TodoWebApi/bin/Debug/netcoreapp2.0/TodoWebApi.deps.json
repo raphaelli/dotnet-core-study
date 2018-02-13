@@ -21,16 +21,16 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "Todo WebApi/1.0.0": {
+      "TodoWebApi/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0"
         },
         "runtime": {
-          "Todo WebApi.dll": {}
+          "TodoWebApi.dll": {}
         },
         "compile": {
-          "Todo WebApi.dll": {}
+          "TodoWebApi.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -3973,7 +3973,7 @@
     }
   },
   "libraries": {
-    "Todo WebApi/1.0.0": {
+    "TodoWebApi/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
