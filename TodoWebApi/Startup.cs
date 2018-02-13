@@ -9,9 +9,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
-using Todo_WebApi.Models;
+using TodoWebApi.Models;
 
-namespace Todo_WebApi
+namespace TodoWebApi
 {
     public class Startup
     {
