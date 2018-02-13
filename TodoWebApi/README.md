@@ -194,3 +194,40 @@ Name = "GetTodo" 创建具名路由。
 `{"id":1,"name":"Item1","isComplete":false}`
 
 **注意**:区别于第一条，第一条是合集，使用`[]`包含，而第二条返回内容为单条记录。
+
+## 实现其他的 CRUD 操作
+在以下部分中，将 Create、Update 和 Delete 方法添加到控制器。
+
+添加以下 Create 方法。
+```cs
+[HttpPost]
+public IActionResult Create([FromBody] TodoItem item)
+{
+    if (item == null)
+    {
+        return BadRequest();
+    }
+
+    _context.TodoItems.Add(item);
+    _context.SaveChanges();
+
+    return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
+}
+```
+
+CreatedAtRoute() 方法：
+- 返回 201 响应。 HTTP 201 是在服务器上创建新资源的 HTTP POST 方法的标准响应。
+- 向响应添加位置标头。 位置标头指定新建的待办事项的 URI。 请参阅 10.2.2 201 已创建。
+- 使用名为 route 的“GetTodo”来创建 URL。 已在 GetById 中定义名为 route 的“GetTodo”：
+```cs
+[HttpGet("{id}", Name = "GetTodo")]
+public IActionResult GetById(long id)
+{
+    var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+    if (item == null)
+    {
+        return NotFound();
+    }
+    return new ObjectResult(item);
+}
+```
