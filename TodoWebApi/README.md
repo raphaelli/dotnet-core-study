@@ -92,8 +92,7 @@ namespace TodoApi.Models
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Models;
 
-//在 ConfigureServices()方法中加入 DbContext 的注册
-
+//在 ConfigureServices()方法中加入 DbContext 的注册 指定将内存数据库注入到服务容器中。
 services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
 ```
 
@@ -112,6 +111,7 @@ namespace TodoApi.Controllers
     {
         private readonly TodoContext _context;
 
+        //构造函数将一个项（如果不存在）添加到内存数据库。
         public TodoController(TodoContext context)
         {
             _context = context;
@@ -123,5 +123,27 @@ namespace TodoApi.Controllers
             }
         }       
     }
+}
+```
+
+## 获取待办事项
+若要获取待办事项，请将下面的方法添加到 `TodoController` 类中。
+
+```C#
+[HttpGet]
+public IEnumerable<TodoItem> GetAll()
+{
+    return _context.TodoItems.ToList();
+}
+
+[HttpGet("{id}", Name = "GetTodo")]
+public IActionResult GetById(long id)
+{
+    var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+    if (item == null)
+    {
+        return NotFound();
+    }
+    return new ObjectResult(item);
 }
 ```
