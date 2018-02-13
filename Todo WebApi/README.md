@@ -43,6 +43,8 @@ dotnet new webapi
 ```
 
 ## 添加模型类
+添加名为`Models`的文件夹。 虽然可将模型类置于项目的任意位置，但按照惯例会使用`模型`文件夹。
+
 添加带有以下代码的 TodoItem 类：
 ```cs
 namespace TodoApi.Models
@@ -61,7 +63,7 @@ namespace TodoApi.Models
 
 数据库上下文是为给定数据模型协调 Entity Framework 功能的主类。 将通过从 Microsoft.EntityFrameworkCore.DbContext 类派生的方式创建此类。
 
-在“模型”文件夹中添加 TodoContext 类：
+在`Models`文件夹中添加 TodoContext 类：
 
 ```cs
 using Microsoft.EntityFrameworkCore;
