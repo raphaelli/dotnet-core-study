@@ -178,3 +178,7 @@ public IActionResult GetById(long id)
     return new ObjectResult(item);
 }
 ```
+`{id}` 是 todo 项 的 ID 的占位符变量。 调用 GetById 时，它会将 URL 中`{id}`的值分配给方法的 id 参数。
+
+Name = "GetTodo" 创建具名路由。
+
