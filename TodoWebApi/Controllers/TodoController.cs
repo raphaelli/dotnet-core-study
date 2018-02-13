@@ -21,6 +21,7 @@ namespace TodoApi.Controllers
             }
         }   
 
+        //查询
         [HttpGet]
         public IEnumerable<TodoItem> GetAll()
         {
@@ -37,6 +38,32 @@ namespace TodoApi.Controllers
             }
             return new ObjectResult(item);
         }    
+
+        //Crate
+        [HttpPost]
+        public IActionResult Create([FromBody] TodoItem item)
+        {
+            if (item == null)
+            {
+                return BadRequest();
+            }
+
+            _context.TodoItems.Add(item);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
+        }
+
+        [HttpGet("{id}", Name = "GetTodo")]
+        public IActionResult GetById(long id)
+        {
+            var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+            if (item == null)
+            {
+                return NotFound();
+            }
+            return new ObjectResult(item);
+        }
     }
 
 }
