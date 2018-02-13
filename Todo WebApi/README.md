@@ -41,3 +41,42 @@ dotnet new webapi
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
   </ItemGroup>
 ```
+
+## 添加模型类
+添加带有以下代码的 TodoItem 类：
+```cs
+namespace TodoApi.Models
+{
+    public class TodoItem
+    {
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public bool IsComplete { get; set; }
+    }
+}
+```
+创建 `TodoItem` 时，数据库将生成 `Id`。
+
+## 创建数据库上下文
+
+数据库上下文是为给定数据模型协调 Entity Framework 功能的主类。 将通过从 Microsoft.EntityFrameworkCore.DbContext 类派生的方式创建此类。
+
+在“模型”文件夹中添加 TodoContext 类：
+
+```cs
+using Microsoft.EntityFrameworkCore;
+
+namespace TodoApi.Models
+{
+    public class TodoContext : DbContext
+    {
+        public TodoContext(DbContextOptions<TodoContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<TodoItem> TodoItems { get; set; }
+
+    }
+}
+```
