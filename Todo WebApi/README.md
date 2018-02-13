@@ -61,7 +61,7 @@ namespace TodoApi.Models
 
 ## 创建数据库上下文
 
-数据库上下文是为给定数据模型协调 Entity Framework 功能的主类。 将通过从 Microsoft.EntityFrameworkCore.DbContext 类派生的方式创建此类。
+数据库上下文是为给定数据模型协调 `Entity Framework` 功能的主类。 将通过从 `Microsoft.EntityFrameworkCore.DbContext` 类派生的方式创建此类。
 
 在`Models`文件夹中添加 TodoContext 类：
 
