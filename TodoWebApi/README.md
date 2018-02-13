@@ -129,13 +129,44 @@ namespace TodoApi.Controllers
 ## 获取待办事项
 若要获取待办事项，请将下面的方法添加到 `TodoController` 类中。
 
-```C#
+```cs
 [HttpGet]
 public IEnumerable<TodoItem> GetAll()
 {
     return _context.TodoItems.ToList();
 }
 
+[HttpGet("{id}", Name = "GetTodo")]
+public IActionResult GetById(long id)
+{
+    var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+    if (item == null)
+    {
+        return NotFound();
+    }
+    return new ObjectResult(item);
+}
+```
+
+## 路由和 URL 路径
+`[HttpGet]` 特性指定 `HTTP GET` 方法。 每个方法的 URL 路径构造如下所示：
+
+ 在控制器的 Route 属性中采用模板字符串：
+
+```cs
+namespace TodoApi.Controllers
+{
+    [Route("api/[controller]")]
+    public class TodoController : Controller
+    {
+        private readonly TodoContext _context;
+```
+
+ - 将 [controller] 替换为控制器的名称，即在控制器类名称中去掉“Controller”后缀。 对于此示例，控制器类名称为“Todo”控制器，根名称为“todo”。 ASP.NET Core 路由不区分大小写。
+ - 如果 [HttpGet] 特性具有路由模板（如 [HttpGet("/products")]），则将它追加到路径。 此示例不使用模板。
+
+ **在 GetById 方法中：**
+```cs
 [HttpGet("{id}", Name = "GetTodo")]
 public IActionResult GetById(long id)
 {
