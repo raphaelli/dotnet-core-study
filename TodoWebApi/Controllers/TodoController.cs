@@ -38,7 +38,7 @@ namespace TodoApi.Controllers
             }
             return new ObjectResult(item);
         }
-        
+
         //Crate
         [HttpPost]
         public IActionResult Create([FromBody] TodoItem item)
@@ -54,8 +54,28 @@ namespace TodoApi.Controllers
             return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
         }
 
+        //通过ID更新
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, [FromBody] TodoItem item)
+        {
+            if (item == null || item.Id != id)
+            {
+                return BadRequest();
+            }
 
+            var todo = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+            if (todo == null)
+            {
+                return NotFound();
+            }
 
+            todo.IsComplete = item.IsComplete;
+            todo.Name = item.Name;
+
+            _context.TodoItems.Update(todo);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
     }    
 
 }
