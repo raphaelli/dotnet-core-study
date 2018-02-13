@@ -24,3 +24,36 @@ mkdir TodoApi
 cd TodoApi
 dotnet new webapi
 ```
+
+尝试运行 `dotnet run ` 然后再本地访问测试
+
+`http://localhost:5000/api/values` 
+
+返回 `["value1","value2"]`
+
+## 添加对 Entity Framework Core 的支持
+本实例使用 EF Core 调用本地 Sql 进行测试
+
+在 `Todo WebApi.csproj` 文件中添加如下内容
+
+```cs
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+</Project>
+```
