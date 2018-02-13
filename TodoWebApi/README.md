@@ -182,3 +182,15 @@ public IActionResult GetById(long id)
 
 Name = "GetTodo" 创建具名路由。
 
+## 基本功能验证
+输入 `http://localhost:5000/api/todo` 访问后，检查到没有数据，则创建一条记录，内容为：
+
+`[{"id":1,"name":"Item1","isComplete":false}]`  参看控制器内的代码逻辑
+
+同样，通过id查询本条记录：
+
+输入 `http://localhost:5000/api/todo/1`  访问后返回：
+
+`{"id":1,"name":"Item1","isComplete":false}`
+
+**注意**:区别于第一条，第一条是合集，使用`[]`包含，而第二条返回内容为单条记录。
