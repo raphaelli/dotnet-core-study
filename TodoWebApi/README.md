@@ -97,3 +97,31 @@ using TodoApi.Models;
 services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
 ```
 
+## 添加控制器
+在`Controllers`文件夹中，创建名为 `TodoController` 的类。 添加以下代码：
+```cs
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using TodoApi.Models;
+using System.Linq;
+
+namespace TodoApi.Controllers
+{
+    [Route("api/[controller]")]
+    public class TodoController : Controller
+    {
+        private readonly TodoContext _context;
+
+        public TodoController(TodoContext context)
+        {
+            _context = context;
+
+            if (_context.TodoItems.Count() == 0)
+            {
+                _context.TodoItems.Add(new TodoItem { Name = "Item1" });
+                _context.SaveChanges();
+            }
+        }       
+    }
+}
+```
