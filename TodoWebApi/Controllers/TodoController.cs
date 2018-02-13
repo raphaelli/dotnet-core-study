@@ -21,4 +21,21 @@ namespace TodoApi.Controllers
             }
         }       
     }
+
+    [HttpGet]
+    public IEnumerable<TodoItem> GetAll()
+    {
+        return _context.TodoItems.ToList();
+    }
+
+    [HttpGet("{id}", Name = "GetTodo")]
+    public IActionResult GetById(long id)
+    {
+        var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+        if (item == null)
+        {
+            return NotFound();
+        }
+        return new ObjectResult(item);
+    }
 }
