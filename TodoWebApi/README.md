@@ -87,4 +87,13 @@ namespace TodoApi.Models
 在该步骤中，向依赖关系注入容器注册数据库上下文。 向依赖关系注入 (DI) 容器注册的服务（例如数据库上下文）可供控制器使用。
 
 使用依赖关系注入的内置支持将数据库上下文注册到服务容器。 
+```cs
+//添加EF Core 和 Models
+using Microsoft.EntityFrameworkCore;
+using TodoApi.Models;
+
+//在 ConfigureServices()方法中加入 DbContext 的注册
+
+services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase("TodoList"));
+```
 
