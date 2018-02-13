@@ -285,7 +285,7 @@ Update 与 Create 类似，但是使用的是 HTTP PUT。 响应是 204（无内
 
 
 ### 删除
-```
+```cs
 [HttpDelete("{id}")]
 public IActionResult Delete(long id)
 {
