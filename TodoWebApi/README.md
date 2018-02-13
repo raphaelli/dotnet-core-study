@@ -233,3 +233,6 @@ public IActionResult GetById(long id)
     return new ObjectResult(item);
 }
 ```
+
+使用 postman 进行 post 测试
+![post test](./img/postdemo.png)
