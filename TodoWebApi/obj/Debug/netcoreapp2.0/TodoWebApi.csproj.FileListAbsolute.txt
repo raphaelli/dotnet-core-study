@@ -8,3 +8,14 @@ C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2
 C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.AssemblyInfo.cs
 C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.dll
 C:\Users\rapha\Documents\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.pdb
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.deps.json
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.runtimeconfig.json
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.runtimeconfig.dev.json
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.dll
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\bin\Debug\netcoreapp2.0\TodoWebApi.pdb
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.csprojResolveAssemblyReference.cache
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.csproj.CoreCompileInputs.cache
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.AssemblyInfoInputs.cache
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.AssemblyInfo.cs
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.dll
+C:\Users\Raphael\OneDrive\code\dotnet-core-study\TodoWebApi\obj\Debug\netcoreapp2.0\TodoWebApi.pdb
