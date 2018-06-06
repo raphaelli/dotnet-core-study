@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using LTM.School.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using LTM.School.Models;
 
 namespace LTM.School.Controllers
 {

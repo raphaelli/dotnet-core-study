@@ -1,6 +1,4 @@
-using System;
-
-namespace LTM.School.Models
+namespace LTM.School.ViewModels
 {
     public class ErrorViewModel
     {
